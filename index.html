@@ -108,6 +108,27 @@ li {
     margin-top: 25px;
 }
 
+.left {
+    background: #f2f4f3;
+    padding: 25px;
+    position: relative; /* важно */
+}
+
+.profile-photo {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.profile-photo {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
 </style>
 </head>
 
@@ -135,7 +156,8 @@ li {
         <div class="section-title">Languages</div>
         <div class="lang">English — B1</div><br>
         <div class="lang">Russian — Native</div>
-
+        
+        <img src="office.jpg" class="profile-photo">
     </div>
 
     <!-- RIGHT -->
