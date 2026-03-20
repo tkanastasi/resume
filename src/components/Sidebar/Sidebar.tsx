@@ -10,6 +10,8 @@ import {
 
 import { Contact } from "../UI/Contact";
 import { Skill } from "../UI/Skill";
+import officeImg from "../../assets/office.jpg";
+import telegramIcon from "../../assets/telegram-svgrepo-com.svg";
 
 export const Sidebar = () => {
   const imgRef = useRef<HTMLImageElement | null>(null);
@@ -31,17 +33,18 @@ export const Sidebar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const contacts = [
-    {
-      text: "tkacheva.anastasi@gmail.com",
-      href: "mailto:tkacheva.anastasi@gmail.com",
-    },
-    { text: "📍 Yerevan, Armenia" },
-    {
-      text: "@tkanastasi",
-      href: "https://t.me/tkanastasi",
-    },
-  ];
+const contacts = [
+  {
+    text: "tkacheva.anastasi@gmail.com",
+    href: "mailto:tkacheva.anastasi@gmail.com",
+  },
+  { text: "📍 Yerevan, Armenia" },
+  {
+    text: "@tkanastasi",
+    href: "https://t.me/tkanastasi",
+    icon: telegramIcon,
+  },
+];
 
   const skills = [
     "Data Processing — Expert",
@@ -63,7 +66,12 @@ export const Sidebar = () => {
 
       <SectionTitle>Contacts</SectionTitle>
       {contacts.map((item, index) => (
-        <Contact key={index} text={item.text} href={item.href} />
+        <Contact
+          key={index}
+          text={item.text}
+          href={item.href}
+          icon={item.icon}
+        />
       ))}
 
       <SectionTitle>Skills</SectionTitle>
@@ -76,7 +84,7 @@ export const Sidebar = () => {
         <Skill key={index} label={lang} />
       ))}
 
-      <ProfilePhoto ref={imgRef} src="/office.jpg" />
+      <ProfilePhoto ref={imgRef} src={officeImg} />
     </SidebarWrapper>
   );
 };
