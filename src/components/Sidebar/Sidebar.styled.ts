@@ -7,7 +7,7 @@ export const SidebarWrapper = styled.div`
 `;
 
 export const Name = styled.div`
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 600;
   margin-bottom: 5px;
 `;

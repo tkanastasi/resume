@@ -7,7 +7,6 @@ JobTitle,
 JobMeta,
 List,
 ListItem,
-Block,
 FeaturedProject,
 ReferenceBlock
 } from "./Content.styled";
@@ -17,7 +16,8 @@ export const Content = () => {
     <ContentWrapper>
       <SectionTitle>Professional summary</SectionTitle>
       <Summary>
-        Frontend Developer with a background in Senior Data Analysis, specializing in building user-friendly interfaces, data visualizations and dashboard solutions. Experienced in working with structured data, ensuring data consistency and transforming complex information into intuitive user experiences.
+        Frontend Developer with a background in Senior Data Analysis, specializing in building user-friendly interfaces, data visualizations and dashboard solutions. 
+        Experienced in working with structured data, ensuring data consistency and transforming complex information into intuitive user experiences.
       </Summary>
 
       <FeaturedProject>
@@ -45,7 +45,7 @@ export const Content = () => {
         <p>Reference letter from my Senior Data Analyst position at Tiburon Research.</p>
 
         <a
-          href="https://tkanastasi.github.io/resume/projects/signal-dashboard/"
+          href="https://drive.google.com/file/d/1gv997koJZbqizQlUBJT5DBZiNZR3uLFl/view"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -98,18 +98,6 @@ export const Content = () => {
           <ListItem>Helped students troubleshoot and build projects</ListItem>
         </List>
       </Job>
-
-      <Block>
-        <SectionTitle>Education</SectionTitle>
-        Electrical and Electronics Engineering<br />
-        Moscow Aviation Institute
-      </Block>
-
-      <Block>
-        <SectionTitle>Hobbies</SectionTitle>
-        Enjoy hiking, cycling, and pilates. I value calm, focused work,
-        clear tasks, and a friendly team environment 🌿
-      </Block>
     </ContentWrapper>
   );
 };

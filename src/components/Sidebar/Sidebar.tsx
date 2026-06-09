@@ -69,6 +69,19 @@ export const Sidebar = () => {
           </div>
         ))}
       </div>
+
+      <SectionTitle>Education</SectionTitle>
+      <div style={{ fontSize: "14px", lineHeight: "1.5" }}>
+        Electrical and Electronics Engineering
+        <br />
+        Moscow Aviation Institute
+      </div>
+
+      <SectionTitle>Interests</SectionTitle>
+      <div style={{ fontSize: "14px", lineHeight: "1.6" }}>
+        Enjoy hiking, cycling, and pilates. 
+        I value calm, focused work, clear tasks, and a friendly team environment 🌿
+      </div>
     </SidebarWrapper>
   );
 };
