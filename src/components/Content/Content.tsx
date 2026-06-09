@@ -14,19 +14,29 @@ export const Content = () => {
   return (
     <ContentWrapper>
       <SectionTitle>Professional summary</SectionTitle>
-
-      <div>
-        <strong>Signal Dashboard</strong><br />
-        <a href="https://tkanastasi.github.io/resume/projects/signal-dashboard/" target="_blank">
-          View Project
-        </a>
-      </div>
-
       <Summary>
-        Frontend Web developer with a background in Senior Data Analysis,
-        specializing in precise UI implementation and ensuring data consistency.
-        Experienced in data processing and analysis to enhance accuracy.
+        Frontend Developer with a background in Senior Data Analysis, specializing in building user-friendly interfaces, data visualizations and dashboard solutions. Experienced in working with structured data, ensuring data consistency and transforming complex information into intuitive user experiences.
       </Summary>
+
+      <Block>
+        <SectionTitle>Featured Project</SectionTitle>
+
+        <strong>Signal Dashboard</strong>
+
+        <List>
+          <ListItem>Interactive dashboard for data visualization and monitoring</ListItem>
+          <ListItem>Built with React, TypeScript and Supabase</ListItem>
+          <ListItem>Implemented data filtering and responsive UI</ListItem>
+        </List>
+
+        <a
+          href="https://tkanastasi.github.io/resume/projects/signal-dashboard/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View Project →
+        </a>
+      </Block>
 
       <SectionTitle>Work experience</SectionTitle>
 
@@ -34,19 +44,23 @@ export const Content = () => {
         <JobTitle>Freelance Frontend Developer</JobTitle>
         <JobMeta>Dec 2025 – Present · Upwork</JobMeta>
         <List>
-          <ListItem>Building web interfaces with React and TypeScript</ListItem>
-          <ListItem>Pixel-perfect layouts and responsive design</ListItem>
-          <ListItem>Consistent component-based structure</ListItem>
+          <ListItem>Developed user interfaces using React and TypeScript.</ListItem>
+          <ListItem>Integrated component-based solutions into Webflow projects.</ListItem>
+          <ListItem>Worked with structured data, CMS and Supabase databases.</ListItem>
+          <ListItem>Built interactive dashboards, visualizations and responsive web interfaces.</ListItem>
+          <ListItem>Ensured quality, consistency and cross-device compatibility of web solutions.</ListItem>
         </List>
       </Job>
 
       <Job>
-        <JobTitle>Data Analyst / Senior Data Analyst</JobTitle>
+        <JobTitle>Senior Data Analyst</JobTitle>
         <JobMeta>Jan 2020 – Sep 2022 · Tiburon Research</JobMeta>
         <List>
-          <ListItem>Full-cycle research projects and data processing</ListItem>
-          <ListItem>Ensured data accuracy and consistency</ListItem>
-          <ListItem>Validated datasets and fixed inconsistencies</ListItem>
+          <ListItem>Led full-cycle research projects from survey design to reporting.</ListItem>
+          <ListItem>Processed, analyzed and visualized data using SPSS, Python and DataTile.</ListItem>
+          <ListItem>Developed interactive dashboards and analytical reports.</ListItem>
+          <ListItem>Trained and mentored team members.</ListItem>
+          <ListItem>Ensured data quality and consistency throughout project lifecycles.</ListItem>
         </List>
       </Job>
 
@@ -54,8 +68,10 @@ export const Content = () => {
         <JobTitle>Junior Data Analyst</JobTitle>
         <JobMeta>Aug 2018 – Jan 2020 · Tiburon Research</JobMeta>
         <List>
-          <ListItem>Programmed surveys using XML and HTML/CSS</ListItem>
-          <ListItem>Maintained structured logic and data consistency</ListItem>
+          <ListItem>Programmed online surveys using XML, HTML/CSS and C#.</ListItem>
+          <ListItem>Collected, validated and processed research data.</ListItem>
+          <ListItem>Maintained survey logic and data quality controls.</ListItem>
+          <ListItem>Supported analysis and reporting activities.</ListItem>
         </List>
       </Job>
 

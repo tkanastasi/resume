@@ -1,4 +1,3 @@
-import { useEffect, useRef } from "react";
 import {
   SidebarWrapper,
   Name,
@@ -14,37 +13,18 @@ import officeImg from "../../assets/office.jpg";
 import telegramIcon from "../../assets/telegram-svgrepo-com.svg";
 
 export const Sidebar = () => {
-  const imgRef = useRef<HTMLImageElement | null>(null);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (!imgRef.current) return;
-
-      const rect = imgRef.current.getBoundingClientRect();
-
-      if (rect.top < window.innerHeight - 100) {
-        imgRef.current.classList.add("show");
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    handleScroll();
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-const contacts = [
-  {
-    text: "tkacheva.anastasi@gmail.com",
-    href: "mailto:tkacheva.anastasi@gmail.com",
-  },
-  { text: "📍 Yerevan, Armenia" },
-  {
-    text: "@tkanastasi",
-    href: "https://t.me/tkanastasi",
-    icon: telegramIcon,
-  },
-];
+  const contacts = [
+    {
+      text: "tkacheva.anastasi@gmail.com",
+      href: "mailto:tkacheva.anastasi@gmail.com",
+    },
+    { text: "📍 Yerevan, Armenia" },
+    {
+      text: "@tkanastasi",
+      href: "https://t.me/tkanastasi",
+      icon: telegramIcon,
+    },
+  ];
 
   const skills = [
     "Data Processing — Expert",
@@ -54,14 +34,16 @@ const contacts = [
   ];
 
   const languages = [
-    "English — A2/B1",
+    "English — B1",
     "Russian — Native",
   ];
 
   return (
     <SidebarWrapper>
+      <ProfilePhoto src={officeImg} />
+
       <Name>Anastasiia Tkacheva</Name>
-      <Role>Frontend Web Developer</Role>
+      <Role>Frontend Developer</Role>
       <ExRole>ex Senior Data Analyst</ExRole>
 
       <SectionTitle>Contacts</SectionTitle>
@@ -83,8 +65,6 @@ const contacts = [
       {languages.map((lang, index) => (
         <Skill key={index} label={lang} />
       ))}
-
-      <ProfilePhoto ref={imgRef} src={officeImg} />
     </SidebarWrapper>
   );
 };
