@@ -1,13 +1,15 @@
 import {
-  ContentWrapper,
-  SectionTitle,
-  Summary,
-  Job,
-  JobTitle,
-  JobMeta,
-  List,
-  ListItem,
-  Block
+ContentWrapper,
+SectionTitle,
+Summary,
+Job,
+JobTitle,
+JobMeta,
+List,
+ListItem,
+Block,
+FeaturedProject,
+ReferenceBlock
 } from "./Content.styled";
 
 export const Content = () => {
@@ -18,7 +20,7 @@ export const Content = () => {
         Frontend Developer with a background in Senior Data Analysis, specializing in building user-friendly interfaces, data visualizations and dashboard solutions. Experienced in working with structured data, ensuring data consistency and transforming complex information into intuitive user experiences.
       </Summary>
 
-      <Block style={{ marginBottom: "20px" }}>
+      <FeaturedProject>
         <SectionTitle>Featured Project</SectionTitle>
 
         <strong>Signal Dashboard</strong>
@@ -34,7 +36,22 @@ export const Content = () => {
         >
           View Project →
         </a>
-      </Block>
+      </FeaturedProject>
+
+      <ReferenceBlock>
+        <SectionTitle>Professional References</SectionTitle>
+
+        <strong>Recommendation Letter</strong>
+        <p>Reference letter from my Senior Data Analyst position at Tiburon Research.</p>
+
+        <a
+          href="https://tkanastasi.github.io/resume/projects/signal-dashboard/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View Document →
+        </a>
+      </ReferenceBlock>
 
       <SectionTitle>Work experience</SectionTitle>
 
@@ -52,7 +69,7 @@ export const Content = () => {
 
       <Job>
         <JobTitle>Senior Data Analyst</JobTitle>
-        <JobMeta>Jan 2020 – Sep 2022 · Tiburon Research</JobMeta>
+        <JobMeta>Oct 2021 – Sep 2022 · Tiburon Research</JobMeta>
         <List>
           <ListItem>Led full-cycle research projects from survey design to reporting.</ListItem>
           <ListItem>Processed, analyzed and visualized data using SPSS, Python and DataTile.</ListItem>
@@ -63,8 +80,8 @@ export const Content = () => {
       </Job>
 
       <Job>
-        <JobTitle>Junior Data Analyst</JobTitle>
-        <JobMeta>Aug 2018 – Jan 2020 · Tiburon Research</JobMeta>
+        <JobTitle>Data Analyst / Junior Data Analyst</JobTitle>
+        <JobMeta>Aug 2018 – Oct 2021 · Tiburon Research</JobMeta>
         <List>
           <ListItem>Programmed online surveys using XML, HTML/CSS and C#.</ListItem>
           <ListItem>Collected, validated and processed research data.</ListItem>
