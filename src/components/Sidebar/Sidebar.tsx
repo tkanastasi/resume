@@ -7,13 +7,16 @@ import {
   ProfilePhoto,
   InfoCard
 } from "./Sidebar.styled";
+import { useState } from "react";
 
 import { Contact } from "../UI/Contact";
 import { Skill } from "../UI/Skill";
 import profilePhoto from "../../assets/profilePhoto.jpg";
+import officeMeme from "../../assets/office.jpg";
 import telegramIcon from "../../assets/telegram-svgrepo-com.svg";
 
 export const Sidebar = () => {
+  const [showMeme, setShowMeme] = useState(false);
   const contacts = [
     {
       text: "tkacheva.anastasi@gmail.com",
@@ -41,7 +44,11 @@ export const Sidebar = () => {
 
   return (
     <SidebarWrapper>
-      <ProfilePhoto src={profilePhoto} />
+      <ProfilePhoto
+        src={showMeme ? officeMeme : profilePhoto}
+        onClick={() => setShowMeme(!showMeme)}
+        style={{ cursor: "pointer" }}
+      />
 
       <Name>Anastasiia Tkacheva</Name>
       <Role>Frontend Developer</Role>
