@@ -73,17 +73,18 @@ export const Sidebar = () => {
       
       <SectionTitle>Education</SectionTitle>
       <InfoCard>
-        <div style={{ display: "flex", gap: "10px" }}>
-          <span>🎓</span>
-            
-          <div>
-            <strong>Electrical & Electronics Engineering</strong>
-            <br />
-            <span style={{ color: "#666" }}>
-              Moscow Aviation Institute
-            </span>
-          </div>
-        </div>
+        <strong>Electrical & Electronics Engineering</strong>
+        <br />
+
+        <span style={{ color: "#666" }}>
+          Moscow Aviation Institute
+        </span>
+
+        <br />
+
+        <span style={{ fontSize: "12px", color: "#888" }}>
+          Sep 2013 – Jan 2017
+        </span>
       </InfoCard>
       
       <SectionTitle>Interests & Work Style</SectionTitle>
@@ -91,11 +92,7 @@ export const Sidebar = () => {
         🌿 Hiking, Cycling, Pilates
         <br/>
         <br/>
-        Calm and focused work
-        <br />
-        Clear tasks and expectations
-        <br />
-        Friendly team environment
+        I value calm, focused work, clear tasks, and a friendly team environment
       </div>
     </SidebarWrapper>
   );
