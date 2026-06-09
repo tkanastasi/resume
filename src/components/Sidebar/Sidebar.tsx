@@ -79,8 +79,12 @@ export const Sidebar = () => {
 
       <SectionTitle>Interests</SectionTitle>
       <div style={{ fontSize: "14px", lineHeight: "1.6" }}>
-        Enjoy hiking, cycling, and pilates. 
-        I value calm, focused work, clear tasks, and a friendly team environment 🌿
+        Enjoy hiking, cycling, and pilates 🌿
+      </div>
+
+      <SectionTitle>Job Style</SectionTitle>
+      <div style={{ fontSize: "14px", lineHeight: "1.6" }}>
+        I value calm, focused work, clear tasks, and a friendly team environment
       </div>
     </SidebarWrapper>
   );
