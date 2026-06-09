@@ -4,8 +4,7 @@ import {
   Role,
   ExRole,
   SectionTitle,
-  ProfilePhoto,
-  InfoCard
+  ProfilePhoto
 } from "./Sidebar.styled";
 
 import { Contact } from "../UI/Contact";
@@ -71,14 +70,12 @@ export const Sidebar = () => {
         ))}
       </div>
       
-      <InfoCard>
-        <SectionTitle>Education</SectionTitle>
-        <div>
-          Electrical and Electronics Engineering
-          <br />
-          Moscow Aviation Institute
-        </div>
-      </InfoCard>
+      <SectionTitle>Education</SectionTitle>
+      <div>
+        Electrical and Electronics Engineering
+        <br />
+        Moscow Aviation Institute
+      </div>
       
       <SectionTitle>Interests & Work Style</SectionTitle>
       <div>
