@@ -9,7 +9,7 @@ import {
 
 import { Contact } from "../UI/Contact";
 import { Skill } from "../UI/Skill";
-import officeImg from "../../assets/office.jpg";
+import profilePhoto from "../../assets/profilePhoto.jpg";
 import telegramIcon from "../../assets/telegram-svgrepo-com.svg";
 
 export const Sidebar = () => {
@@ -40,7 +40,7 @@ export const Sidebar = () => {
 
   return (
     <SidebarWrapper>
-      <ProfilePhoto src={officeImg} />
+      <ProfilePhoto src={profilePhoto} />
 
       <Name>Anastasiia Tkacheva</Name>
       <Role>Frontend Developer</Role>
