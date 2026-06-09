@@ -18,16 +18,14 @@ export const Content = () => {
         Frontend Developer with a background in Senior Data Analysis, specializing in building user-friendly interfaces, data visualizations and dashboard solutions. Experienced in working with structured data, ensuring data consistency and transforming complex information into intuitive user experiences.
       </Summary>
 
-      <Block>
+      <Block style={{ marginBottom: "20px" }}>
         <SectionTitle>Featured Project</SectionTitle>
 
         <strong>Signal Dashboard</strong>
-
-        <List>
-          <ListItem>Interactive dashboard for data visualization and monitoring</ListItem>
-          <ListItem>Built with React, TypeScript and Supabase</ListItem>
-          <ListItem>Implemented data filtering and responsive UI</ListItem>
-        </List>
+        <p>
+          Interactive dashboard for monitoring and visualizing data using React,
+          TypeScript and Supabase.
+        </p>
 
         <a
           href="https://tkanastasi.github.io/resume/projects/signal-dashboard/"

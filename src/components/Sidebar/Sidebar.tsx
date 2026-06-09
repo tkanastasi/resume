@@ -62,9 +62,13 @@ export const Sidebar = () => {
       ))}
 
       <SectionTitle>Languages</SectionTitle>
-      {languages.map((lang, index) => (
-        <Skill key={index} label={lang} />
-      ))}
+      <div>
+        {languages.map((lang, index) => (
+          <div key={index}>
+            <Skill label={lang} />
+          </div>
+        ))}
+      </div>
     </SidebarWrapper>
   );
 };

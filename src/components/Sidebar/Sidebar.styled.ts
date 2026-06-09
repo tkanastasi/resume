@@ -7,7 +7,7 @@ export const SidebarWrapper = styled.div`
 `;
 
 export const Name = styled.div`
-  font-size: 26px;
+  font-size: 30px;
   font-weight: 600;
   margin-bottom: 5px;
 `;
@@ -49,14 +49,6 @@ export const ProfilePhoto = styled.img`
   width: 100%;
   height: 220px;
   object-fit: cover;
-  margin-top: 30px;
-
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.8s ease;
-
-  &.show {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  margin-bottom: 20px;
+  border-radius: 8px;
 `;
