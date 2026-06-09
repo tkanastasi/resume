@@ -16,9 +16,7 @@ export const Content = () => {
     <ContentWrapper>
       <SectionTitle>Professional summary</SectionTitle>
       <Summary>
-        Frontend Developer with a background in Senior Data Analysis, specializing in building user-friendly interfaces, data visualizations and dashboard solutions. 
-        <br/>
-        Experienced in working with structured data, ensuring data consistency and transforming complex information into intuitive user experiences.
+        Frontend Developer with a background in Senior Data Analysis, experienced in building user-friendly interfaces, data visualizations and dashboard solutions while ensuring data consistency and transforming complex information into intuitive user experiences.
       </Summary>
 
       <FeaturedProject>
