@@ -40,7 +40,7 @@ export const Content = () => {
       </FeaturedProject>
 
       <ReferenceBlock>
-        <SectionTitle>Professional References</SectionTitle>
+        <SectionTitle>Professional Reference</SectionTitle>
 
         <strong>Recommendation Letter</strong>
         <p>Reference letter from my Senior Data Analyst position at Tiburon Research.</p>
