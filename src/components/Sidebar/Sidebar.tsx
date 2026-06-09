@@ -4,7 +4,8 @@ import {
   Role,
   ExRole,
   SectionTitle,
-  ProfilePhoto
+  ProfilePhoto,
+  InfoCard
 } from "./Sidebar.styled";
 
 import { Contact } from "../UI/Contact";
@@ -69,21 +70,20 @@ export const Sidebar = () => {
           </div>
         ))}
       </div>
-
-      <SectionTitle>Education</SectionTitle>
-      <div style={{ fontSize: "14px", lineHeight: "1.5" }}>
-        Electrical and Electronics Engineering
-        <br />
-        Moscow Aviation Institute
-      </div>
-
-      <SectionTitle>Interests</SectionTitle>
-      <div style={{ fontSize: "14px", lineHeight: "1.6" }}>
+      
+      <InfoCard>
+        <SectionTitle>Education</SectionTitle>
+        <div>
+          Electrical and Electronics Engineering
+          <br />
+          Moscow Aviation Institute
+        </div>
+      </InfoCard>
+      
+      <SectionTitle>Interests & Work Style</SectionTitle>
+      <div>
         Enjoy hiking, cycling, and pilates 🌿
-      </div>
-
-      <SectionTitle>Job Style</SectionTitle>
-      <div style={{ fontSize: "14px", lineHeight: "1.6" }}>
+        <br/>
         I value calm, focused work, clear tasks, and a friendly team environment
       </div>
     </SidebarWrapper>

@@ -52,3 +52,13 @@ export const ProfilePhoto = styled.img`
   margin-bottom: 20px;
   border-radius: 8px;
 `;
+
+export const InfoCard = styled.div`  
+  background: white;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  line-height: 1.6;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+`;
