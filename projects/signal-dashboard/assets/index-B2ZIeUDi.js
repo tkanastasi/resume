@@ -463,9 +463,10 @@ Resources:`;for(let t of c){if(!t||typeof t!=`string`)throw Error(`@supabase/aut
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
 
-  border-bottom: 2px solid rgba(255, 255, 255, 0.06);
-
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid rgba(40, 175, 96, 0.10);
+  box-shadow:
+    0 8px 32px rgba(0,0,0,0.15),
+    0 1px 0 rgba(40,175,96,0.08);
 `,Yc=M.div`
   display: flex;
   align-items: center;
@@ -518,4 +519,4 @@ Resources:`;for(let t of c){if(!t||typeof t!=`string`)throw Error(`@supabase/aut
 `,$c=M.div`
   padding: 2em;
 `;var el=v();function tl(){let e=(0,el.c)(4),t;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,W.jsxs)(Yc,{children:[(0,W.jsx)(Xc,{src:`icon.png`,alt:`Signal Dashboard`}),`Signal Dashboard`]}),e[0]=t):t=e[0];let n;e[1]===Symbol.for(`react.memo_cache_sentinel`)?(n=(0,W.jsxs)(Jc,{children:[t,(0,W.jsxs)(Zc,{href:`https://tkanastasi.github.io/resume/`,children:[(0,W.jsx)(hc,{}),`Resume`]})]}),e[1]=n):n=e[1];let r;e[2]===Symbol.for(`react.memo_cache_sentinel`)?(r=(0,W.jsxs)(Qc,{children:[(0,W.jsx)(Fc,{type:Pc.MonthlyGrowth}),(0,W.jsx)(Fc,{type:Pc.ProfitFactor}),(0,W.jsx)(Fc,{type:Pc.WinRate})]}),e[2]=r):r=e[2];let i;return e[3]===Symbol.for(`react.memo_cache_sentinel`)?(i=(0,W.jsxs)(qc,{children:[n,r,(0,W.jsx)($c,{children:(0,W.jsx)(Gc,{market:`All`})})]}),e[3]=i):i=e[3],i}var nl=tl;(0,g.createRoot)(document.getElementById(`root`)).render((0,W.jsx)(nl,{}));
-//# sourceMappingURL=index-BSA_qzkP.js.map
+//# sourceMappingURL=index-B2ZIeUDi.js.map
