@@ -8,11 +8,11 @@ export const SectionTitle = styled.div`
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 14px;
-  color: #2f4f4f;
+  color: #23232A;
 `;
 
 export const Summary = styled.div`
-  color: #444;
+  color: #23232A;
   font-size: 14px;
   margin-bottom: 25px;
 `;
@@ -46,17 +46,36 @@ export const Block = styled.div`
 `;
 
 export const FeaturedProject = styled.div`  
-  background: #eef5f1;
-  border-left: 4px solid #2f5d50;
+  background: #fafaf9;
+  border-left: 3px solid #FAC775;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
   padding: 16px 20px;
   border-radius: 8px;
   margin: 25px 0 35px;
+
+  a {
+    color: #7F77DD;
+    text-decoration: none;
+    font-weight: 500;
+  }
 `;
 
 export const ReferenceBlock = styled.div`  
   background: #fafaf7;
-  border-left: 4px solid #8a9a5b;
+  border-left: 4px solid #FAC775;
   padding: 16px 20px;
   border-radius: 8px;
   margin-bottom: 35px;
+`;
+
+export const CardsRow = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+
+  margin: 25px 0 35px;
+
+  @media (max-width: 700px) {
+    grid-template-columns: 1fr;
+  }
 `;

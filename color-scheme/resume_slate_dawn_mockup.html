@@ -1,0 +1,132 @@
+
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  .resume { display: flex; min-height: 600px; border-radius: 12px; overflow: hidden; font-size: 13px; line-height: 1.6; background: #23232A; }
+  .sidebar { width: 220px; flex-shrink: 0; background: #2E2E38; padding: 24px 18px; display: flex; flex-direction: column; gap: 20px; }
+  .main { flex: 1; background: #F1EFF8; padding: 24px 28px; overflow: auto; }
+  .avatar-wrap { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+  .avatar { width: 100px; height: 100px; border-radius: 10px; background: #3A3A46; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+  .avatar svg { width: 60px; height: 60px; opacity: 0.4; }
+  .name { font-size: 17px; font-weight: 500; color: #F1EFF8; text-align: center; line-height: 1.3; }
+  .role { font-size: 11px; color: #B4B2A9; text-align: center; line-height: 1.4; margin-top: 2px; }
+  .s-section-title { font-size: 10px; font-weight: 500; color: #888780; letter-spacing: 0.07em; text-transform: uppercase; margin-bottom: 8px; }
+  .contact-item { display: flex; align-items: center; gap: 6px; font-size: 11px; color: #D3D1C7; margin-bottom: 5px; }
+  .contact-dot { width: 5px; height: 5px; border-radius: 50%; background: #7F77DD; flex-shrink: 0; }
+  .tag { display: inline-block; background: #534AB7; color: #EEEDFE; border-radius: 20px; font-size: 10px; padding: 3px 9px; margin: 2px 2px 2px 0; }
+  .lang-tag { display: inline-block; background: #3A3A46; color: #D3D1C7; border-radius: 20px; font-size: 10px; padding: 3px 9px; margin: 2px 2px 2px 0; }
+  .edu-block { background: #3A3A46; border-radius: 8px; padding: 10px 12px; }
+  .edu-title { font-size: 11px; font-weight: 500; color: #F1EFF8; line-height: 1.3; }
+  .edu-sub { font-size: 10px; color: #888780; margin-top: 2px; }
+  .m-section-title { font-size: 15px; font-weight: 500; color: #23232A; margin-bottom: 12px; padding-bottom: 6px; border-bottom: 1.5px solid #7F77DD; }
+  .summary-text { font-size: 12px; color: #3C3489; line-height: 1.65; margin-bottom: 16px; }
+  .featured-card { background: #fff; border-radius: 10px; border-left: 3px solid #FAC775; padding: 14px 16px; margin-bottom: 12px; border-top: 0.5px solid #D3D1C7; border-right: 0.5px solid #D3D1C7; border-bottom: 0.5px solid #D3D1C7; }
+  .featured-label { font-size: 10px; font-weight: 500; color: #888780; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 4px; }
+  .featured-title { font-size: 13px; font-weight: 500; color: #23232A; margin-bottom: 4px; }
+  .featured-desc { font-size: 11px; color: #5F5E5A; margin-bottom: 8px; }
+  .featured-link { font-size: 11px; color: #7F77DD; font-weight: 500; }
+  .cards-row { display: flex; gap: 10px; margin-bottom: 20px; }
+  .cards-row .featured-card { flex: 1; margin-bottom: 0; }
+  .job-block { margin-bottom: 16px; }
+  .job-title { font-size: 13px; font-weight: 500; color: #23232A; }
+  .job-meta { font-size: 11px; color: #888780; margin-bottom: 6px; }
+  .job-list { padding-left: 14px; }
+  .job-list li { font-size: 11px; color: #3C3489; margin-bottom: 3px; }
+  .job-divider { border: none; border-top: 0.5px solid #D3D1C7; margin: 14px 0; }
+</style>
+
+<h2 class="sr-only">Макет резюме Анастасии Ткачёвой в палитре «Грифельный рассвет»</h2>
+
+<div class="resume">
+  <div class="sidebar">
+    <div class="avatar-wrap">
+      <div class="avatar">
+        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="30" cy="22" r="12" fill="#B4B2A9"/>
+          <ellipse cx="30" cy="52" rx="20" ry="12" fill="#B4B2A9"/>
+        </svg>
+      </div>
+      <div>
+        <div class="name">Anastasiia<br>Tkacheva</div>
+        <div class="role">Frontend Developer<br>ex Senior Data Analyst</div>
+      </div>
+    </div>
+
+    <div>
+      <div class="s-section-title">Contacts</div>
+      <div class="contact-item"><span class="contact-dot"></span>tkacheva.anastasi@gmail.com</div>
+      <div class="contact-item"><span class="contact-dot"></span>Yerevan, Armenia</div>
+      <div class="contact-item"><span class="contact-dot"></span>@tkanastasi</div>
+    </div>
+
+    <div>
+      <div class="s-section-title">Skills</div>
+      <span class="tag">Data Processing — Expert</span>
+      <span class="tag">Data Analysis — Advanced</span>
+      <span class="tag">Data Consistency — Expert</span>
+      <span class="tag">UI Accuracy — Advanced</span>
+    </div>
+
+    <div>
+      <div class="s-section-title">Languages</div>
+      <span class="lang-tag">English — B1</span>
+      <span class="lang-tag">Russian — Native</span>
+    </div>
+
+    <div>
+      <div class="s-section-title">Education</div>
+      <div class="edu-block">
+        <div class="edu-title">Electrical &amp; Electronics Engineering</div>
+        <div class="edu-sub">Moscow Aviation Institute</div>
+        <div class="edu-sub">Sep 2013 – Jan 2017</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="m-section-title">Professional summary</div>
+    <div class="summary-text">Frontend Developer with a background in Senior Data Analysis, specializing in building user-friendly interfaces, data visualizations and dashboard solutions. Experienced in working with structured data, ensuring data consistency and transforming complex information into intuitive user experiences.</div>
+
+    <div class="cards-row">
+      <div class="featured-card">
+        <div class="featured-label">Featured Project</div>
+        <div class="featured-title">Signal Dashboard</div>
+        <div class="featured-desc">Interactive dashboard for monitoring and visualizing data using React, TypeScript and Supabase.</div>
+        <div class="featured-link">View Project →</div>
+      </div>
+      <div class="featured-card">
+        <div class="featured-label">Professional Reference</div>
+        <div class="featured-title">Recommendation Letter</div>
+        <div class="featured-desc">Reference letter from my Senior Data Analyst position at Tiburon Research.</div>
+        <div class="featured-link">View Document →</div>
+      </div>
+    </div>
+
+    <div class="m-section-title">Work experience</div>
+
+    <div class="job-block">
+      <div class="job-title">Freelance Frontend Developer</div>
+      <div class="job-meta">Dec 2025 – Present · Upwork</div>
+      <ul class="job-list">
+        <li>Developed user interfaces using React and TypeScript.</li>
+        <li>Integrated component-based solutions into Webflow projects.</li>
+        <li>Worked with structured data, CMS and Supabase databases.</li>
+        <li>Built interactive dashboards, visualizations and responsive web interfaces.</li>
+        <li>Ensured quality, consistency and cross-device compatibility of web solutions.</li>
+      </ul>
+    </div>
+
+    <hr class="job-divider">
+
+    <div class="job-block">
+      <div class="job-title">Senior Data Analyst</div>
+      <div class="job-meta">Oct 2021 – Sep 2022 · Tiburon Research</div>
+      <ul class="job-list">
+        <li>Led full-cycle research projects from survey design to reporting.</li>
+        <li>Processed, analyzed and visualized data using SPSS, Python and DataTile.</li>
+        <li>Developed interactive dashboards and analytical reports.</li>
+        <li>Trained and mentored team members.</li>
+        <li>Ensured data quality and consistency throughout project lifecycles.</li>
+      </ul>
+    </div>
+  </div>
+</div>

@@ -8,7 +8,8 @@ JobMeta,
 List,
 ListItem,
 FeaturedProject,
-ReferenceBlock
+ReferenceBlock,
+CardsRow
 } from "./Content.styled";
 
 export const Content = () => {
@@ -21,38 +22,40 @@ export const Content = () => {
         Experienced in working with structured data, ensuring data consistency and transforming complex information into intuitive user experiences.
       </Summary>
 
-      <FeaturedProject>
-        <SectionTitle>Featured Project</SectionTitle>
+      <CardsRow>
+        <FeaturedProject>
+          <SectionTitle>Featured Project</SectionTitle>
 
-        <strong>Signal Dashboard</strong>
-        <p>
-          Interactive dashboard for monitoring and visualizing data using React,
-          TypeScript and Supabase.
-        </p>
+          <strong>Signal Dashboard</strong>
+          <p>
+            Interactive dashboard for monitoring and visualizing data using React,
+            TypeScript and Supabase.
+          </p>
 
-        <a
-          href="https://tkanastasi.github.io/resume/projects/signal-dashboard/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          View Project →
-        </a>
-      </FeaturedProject>
+          <a
+            href="https://tkanastasi.github.io/resume/projects/signal-dashboard/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Project →
+          </a>
+        </FeaturedProject>
 
-      <ReferenceBlock>
-        <SectionTitle>Professional Reference</SectionTitle>
+        <ReferenceBlock>
+          <SectionTitle>Professional Reference</SectionTitle>
 
-        <strong>Recommendation Letter</strong>
-        <p>Reference letter from my Senior Data Analyst position at Tiburon Research.</p>
+          <strong>Recommendation Letter</strong>
+          <p>Reference letter from my Senior Data Analyst position at Tiburon Research.</p>
 
-        <a
-          href="https://drive.google.com/file/d/1gv997koJZbqizQlUBJT5DBZiNZR3uLFl/view"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          View Document →
-        </a>
-      </ReferenceBlock>
+          <a
+            href="https://drive.google.com/file/d/1gv997koJZbqizQlUBJT5DBZiNZR3uLFl/view"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Document →
+          </a>
+        </ReferenceBlock>
+      </CardsRow>
 
       <SectionTitle>Work experience</SectionTitle>
 

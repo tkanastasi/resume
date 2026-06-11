@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SidebarWrapper = styled.div`
-  background: #f2f4f3;
+  background: #2E2E38;
   padding: 25px;
   position: relative;
 `;
