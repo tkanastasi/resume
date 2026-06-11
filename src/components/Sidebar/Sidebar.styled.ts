@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const SidebarWrapper = styled.div`
-  background: rgba(255,255,255,0.08);
-  backdrop-filter: blur(8px);
+  background: #f2f4f3;
   padding: 25px;
   position: relative;
 `;
@@ -11,8 +10,6 @@ export const Name = styled.div`
   font-size: 28px;
   font-weight: 600;
   margin-bottom: 5px;
-
-  color: white;
 `;
 
 export const Role = styled.div`
