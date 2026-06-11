@@ -9,13 +9,18 @@ List,
 ListItem,
 FeaturedProject,
 ReferenceBlock,
-CardsRow
+CardsRow,
+CardLabel,
+CardTitle,
+ColorDivider,
+GrayDivider
 } from "./Content.styled";
 
 export const Content = () => {
   return (
     <ContentWrapper>
       <SectionTitle>Professional summary</SectionTitle>
+      <ColorDivider />
       <Summary>
         Frontend Developer with a background in Senior Data Analysis, specializing in building user-friendly interfaces, data visualizations and dashboard solutions. 
         <br/>
@@ -24,9 +29,10 @@ export const Content = () => {
 
       <CardsRow>
         <FeaturedProject>
-          <SectionTitle>Featured Project</SectionTitle>
+          <CardLabel>Featured Project</CardLabel>
 
-          <strong>Signal Dashboard</strong>
+          <CardTitle>Signal Dashboard</CardTitle>
+
           <p>
             Interactive dashboard for monitoring and visualizing data using React,
             TypeScript and Supabase.
@@ -42,13 +48,16 @@ export const Content = () => {
         </FeaturedProject>
 
         <ReferenceBlock>
-          <SectionTitle>Professional Reference</SectionTitle>
-
-          <strong>Recommendation Letter</strong>
-          <p>Reference letter from my Senior Data Analyst position at Tiburon Research.</p>
-
+          <CardLabel>Professional Reference</CardLabel>
+          
+          <CardTitle>Recommendation Letter</CardTitle>
+          
+          <p>
+            Reference letter from my Senior Data Analyst position at Tiburon Research.
+          </p>
+          
           <a
-            href="https://drive.google.com/file/d/1gv997koJZbqizQlUBJT5DBZiNZR3uLFl/view"
+            href="..."
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -58,6 +67,7 @@ export const Content = () => {
       </CardsRow>
 
       <SectionTitle>Work experience</SectionTitle>
+      <ColorDivider />
 
       <Job>
         <JobTitle>Freelance Frontend Developer</JobTitle>
@@ -70,6 +80,8 @@ export const Content = () => {
           <ListItem>Ensured quality, consistency and cross-device compatibility of web solutions.</ListItem>
         </List>
       </Job>
+
+      <GrayDivider />
 
       <Job>
         <JobTitle>Senior Data Analyst</JobTitle>
@@ -93,6 +105,8 @@ export const Content = () => {
           <ListItem>Supported analysis and reporting activities.</ListItem>
         </List>
       </Job>
+
+      <GrayDivider />
 
       <Job>
         <JobTitle>Assistant Instructor</JobTitle>

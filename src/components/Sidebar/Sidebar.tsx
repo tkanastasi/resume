@@ -5,15 +5,13 @@ import {
   ExRole,
   SectionTitle,
   ProfilePhoto,
-  InfoCard
+  InfoCard,
+  ContactItem
 } from "./Sidebar.styled";
 import { useState } from "react";
-
-import { Contact } from "../UI/Contact";
 import { Skill } from "../UI/Skill";
 import profilePhoto from "../../assets/profilePhoto.jpg";
 import officeMeme from "../../assets/office.jpg";
-import telegramIcon from "../../assets/telegram-svgrepo-com.svg";
 
 export const Sidebar = () => {
   const [showMeme, setShowMeme] = useState(false);
@@ -22,11 +20,10 @@ export const Sidebar = () => {
       text: "tkacheva.anastasi@gmail.com",
       href: "mailto:tkacheva.anastasi@gmail.com",
     },
-    { text: "📍 Yerevan, Armenia" },
+    { text: "Yerevan, Armenia" },
     {
       text: "@tkanastasi",
       href: "https://t.me/tkanastasi",
-      icon: telegramIcon,
     },
   ];
 
@@ -55,14 +52,17 @@ export const Sidebar = () => {
       <ExRole>ex Senior Data Analyst</ExRole>
 
       <SectionTitle>Contacts</SectionTitle>
-      {contacts.map((item, index) => (
-        <Contact
-          key={index}
-          text={item.text}
-          href={item.href}
-          icon={item.icon}
-        />
-      ))}
+      <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
+        {contacts.map((item, index) => (
+          <ContactItem key={index}>
+            {item.href ? (
+              <a href={item.href}>{item.text}</a>
+            ) : (
+              item.text
+            )}
+          </ContactItem>
+        ))}
+      </div>
 
       <SectionTitle>Skills</SectionTitle>
       {skills.map((skill, index) => (
@@ -80,22 +80,26 @@ export const Sidebar = () => {
       
       <SectionTitle>Education</SectionTitle>
       <InfoCard>
-        <strong>Electrical & Electronics Engineering</strong>
-        <br />
+        <div className="title">
+          Electrical & Electronics Engineering
+        </div>
 
-        <span style={{ color: "#666" }}>
+        <div className="sub">
           Moscow Aviation Institute
-        </span>
+        </div>
 
-        <br />
-
-        <span style={{ fontSize: "12px", color: "#888" }}>
+        <div className="sub">
           Sep 2013 – Jan 2017
-        </span>
+        </div>
       </InfoCard>
       
       <SectionTitle>Interests & Work Style</SectionTitle>
-      <div>
+        <div
+          style={{
+            fontSize: "14px",
+            color: "#D3D1C7"
+          }}
+        >
         🌿 Hiking, Cycling, Pilates
         <br/>
         <br/>
