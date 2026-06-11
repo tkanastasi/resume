@@ -22,7 +22,7 @@ export const Sidebar = () => {
     },
     { text: "Yerevan, Armenia" },
     {
-      text: "@tkanastasi",
+      text: "tg: @tkanastasi",
       href: "https://t.me/tkanastasi",
     },
   ];
