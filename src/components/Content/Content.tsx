@@ -57,7 +57,7 @@ export const Content = () => {
           </p>
           
           <a
-            href="..."
+            href="https://drive.google.com/file/d/1gv997koJZbqizQlUBJT5DBZiNZR3uLFl/view"
             target="_blank"
             rel="noopener noreferrer"
           >
