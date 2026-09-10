@@ -1,7 +1,58 @@
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  background: #23232A;
+
+  background:
+    radial-gradient(
+      circle at 8% 10%,
+      #C8C99F 0%,
+      #C8C99F 12%,
+      transparent 42%
+    ),
+
+    radial-gradient(
+      circle at 5% 30%,
+      #9BA76A 0%,
+      #9BA76A 25%,
+      transparent 58%
+    ),
+
+    radial-gradient(
+      circle at 18% 55%,
+      #7F934F 0%,
+      #7F934F 30%,
+      transparent 62%
+    ),
+
+    radial-gradient(
+      circle at 2% 85%,
+      #687D45 0%,
+      #687D45 28%,
+      transparent 58%
+    ),
+
+    radial-gradient(
+      circle at 38% 20%,
+      #B4B58A 0%,
+      #B4B58A 14%,
+      transparent 45%
+    ),
+
+    radial-gradient(
+      circle at 88% 82%,
+      #D19A68 0%,
+      #D19A68 24%,
+      transparent 52%
+    ),
+
+    radial-gradient(
+      circle at 95% 15%,
+      #DDD8B9 0%,
+      #DDD8B9 20%,
+      transparent 50%
+    ),
+
+    #C8C19D;
 }
 
 a {
