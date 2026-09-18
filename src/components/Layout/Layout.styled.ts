@@ -1,10 +1,9 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-  width: 900px;
-  margin: 30px auto;
-  background: #F1EFF8;
+export const Container = styled.main`
+  width: min(1200px, calc(100% - 48px));
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: 300px 1fr;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  grid-template-columns: 320px 1fr;
+  min-height: 100vh;
 `;

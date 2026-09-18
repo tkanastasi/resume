@@ -1,37 +1,30 @@
 import {
   SidebarWrapper,
   Name,
-  Role,
   ExRole,
   SectionTitle,
   ProfilePhoto,
   InfoCard,
-  ContactItem
+  ContactItem,
+  Interests,
 } from "./Sidebar.styled";
-import { useState } from "react";
+
 import { Skill } from "../UI/Skill";
 import profilePhoto from "../../assets/profilePhoto.jpg";
-import officeMeme from "../../assets/office.jpg";
 
 export const Sidebar = () => {
-  const [showMeme, setShowMeme] = useState(false);
   const contacts = [
     {
       text: "tkacheva.anastasi@gmail.com",
       href: "mailto:tkacheva.anastasi@gmail.com",
     },
-    { text: "Yerevan, Armenia" },
+    {
+      text: "Yerevan, Armenia",
+    },
     {
       text: "tg: @tkanastasi",
       href: "https://t.me/tkanastasi",
     },
-  ];
-
-  const skills = [
-    "Data Processing — Expert",
-    "Data Analysis — Advanced",
-    "Data Consistency — Expert",
-    "UI Accuracy — Advanced",
   ];
 
   const languages = [
@@ -41,22 +34,28 @@ export const Sidebar = () => {
 
   return (
     <SidebarWrapper>
-      <ProfilePhoto
-        src={showMeme ? officeMeme : profilePhoto}
-        onClick={() => setShowMeme(!showMeme)}
-        style={{ cursor: "pointer" }}
-      />
+      <ProfilePhoto src={profilePhoto} />
 
-      <Name>Anastasiia Tkacheva</Name>
-      <Role>Frontend Developer</Role>
-      <ExRole>ex Senior Data Analyst</ExRole>
+      <Name>Anastasi Tk.</Name>
+      <ExRole />
 
       <SectionTitle>Contacts</SectionTitle>
-      <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
+
+      <div>
         {contacts.map((item, index) => (
           <ContactItem key={index}>
             {item.href ? (
-              <a href={item.href}>{item.text}</a>
+              <a
+                href={item.href}
+                target={item.href.startsWith("http") ? "_blank" : undefined}
+                rel={
+                  item.href.startsWith("http")
+                    ? "noopener noreferrer"
+                    : undefined
+                }
+              >
+                {item.text}
+              </a>
             ) : (
               item.text
             )}
@@ -64,21 +63,16 @@ export const Sidebar = () => {
         ))}
       </div>
 
-      <SectionTitle>Skills</SectionTitle>
-      {skills.map((skill, index) => (
-        <Skill key={index} label={skill} />
+      <SectionTitle>Languages</SectionTitle>
+
+      {languages.map((lang, index) => (
+        <div key={index}>
+          <Skill label={lang} />
+        </div>
       ))}
 
-      <SectionTitle>Languages</SectionTitle>
-      <div>
-        {languages.map((lang, index) => (
-          <div key={index}>
-            <Skill label={lang} />
-          </div>
-        ))}
-      </div>
-      
       <SectionTitle>Education</SectionTitle>
+
       <InfoCard>
         <div className="title">
           Electrical & Electronics Engineering
@@ -92,19 +86,17 @@ export const Sidebar = () => {
           Sep 2013 – Jan 2017
         </div>
       </InfoCard>
-      
+
       <SectionTitle>Interests & Work Style</SectionTitle>
-        <div
-          style={{
-            fontSize: "14px",
-            color: "#D3D1C7"
-          }}
-        >
-        🌿 Hiking, Cycling, Pilates
-        <br/>
-        <br/>
-        I value calm, focused work, clear tasks, and a friendly team environment
-      </div>
+
+      <Interests>
+        <div>🌿 Hiking, Cycling, Pilates</div>
+
+        <p>
+          I value calm, focused work, clear tasks, and a friendly team
+          environment.
+        </p>
+      </Interests>
     </SidebarWrapper>
   );
 };

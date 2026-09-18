@@ -1,121 +1,292 @@
 import {
-ContentWrapper,
-SectionTitle,
-Summary,
-Job,
-JobTitle,
-JobMeta,
-List,
-ListItem,
-FeaturedProject,
-ReferenceBlock,
-CardsRow,
-CardLabel,
-CardTitle,
-ColorDivider,
-GrayDivider
+  ContentWrapper,
+  Intro,
+  Eyebrow,
+  IntroTitle,
+  IntroText,
+  Tags,
+  Tag,
+  Section,
+  SectionHeader,
+  SectionNumber,
+  SectionTitle,
+  HeaderLine,
+  Timeline,
+  TimelineItem,
+  TimelineYear,
+  TimelineContent,
+  TimelineTitle,
+  TimelineMeta,
+  TimelineDescription,
+  TimelineTags,
+  TimelineTag,
+  WorkGrid,
+  WorkCard,
+  WorkType,
+  WorkTitle,
+  WorkDescription,
+  WorkFooter,
+  WorkTags,
+  WorkTag,
+  WorkLink,
 } from "./Content.styled";
 
 export const Content = () => {
   return (
     <ContentWrapper>
-      <SectionTitle>Professional summary</SectionTitle>
-      <ColorDivider />
-      <Summary>
-        Frontend Developer with a background in Senior Data Analysis, specializing in building user-friendly interfaces, data visualizations and dashboard solutions. 
-        <br/>
-        Experienced in working with structured data, ensuring data consistency and transforming complex information into intuitive user experiences.
-      </Summary>
+      <Intro>
+        <Eyebrow>01 / About</Eyebrow>
 
-      <CardsRow>
-        <FeaturedProject>
-          <CardLabel>Featured Project</CardLabel>
+        <IntroTitle>
+          Game Design · Data · Development
+        </IntroTitle>
 
-          <CardTitle>Signal Dashboard</CardTitle>
+        <IntroText>
+          I work with data, code and interactive systems. My background
+          combines 4+ years in data analytics, programming and development.
+          Currently exploring Game Design, with a particular interest in
+          systems, balance and game economy.
+        </IntroText>
 
-          <p>
-            Interactive dashboard for monitoring and visualizing data using React,
-            TypeScript and Supabase.
-          </p>
+        <Tags>
+          <Tag>Game Design</Tag>
+          <Tag>Data Analysis</Tag>
+          <Tag>Development</Tag>
+          <Tag>GameDev</Tag>
+          <Tag>Unity</Tag>
+        </Tags>
+      </Intro>
 
-          <a
-            href="https://tkanastasi.github.io/resume/projects/signal-dashboard/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View Project →
-          </a>
-        </FeaturedProject>
+      <Section>
+        <SectionHeader>
+          <SectionNumber>02</SectionNumber>
+          <HeaderLine />
+          <SectionTitle>Timeline</SectionTitle>
+        </SectionHeader>
 
-        <ReferenceBlock>
-          <CardLabel>Professional Reference</CardLabel>
-          
-          <CardTitle>Recommendation Letter</CardTitle>
-          
-          <p>
-            Reference letter from my Senior Data Analyst position at Tiburon Research.
-          </p>
-          
-          <a
-            href="https://drive.google.com/file/d/1gv997koJZbqizQlUBJT5DBZiNZR3uLFl/view"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View Document →
-          </a>
-        </ReferenceBlock>
-      </CardsRow>
+        <Timeline>
+          <TimelineItem>
+            <TimelineYear>2026</TimelineYear>
 
-      <SectionTitle>Work experience</SectionTitle>
-      <ColorDivider />
+            <TimelineContent>
+              <TimelineTitle>Moving towards Game Design</TimelineTitle>
 
-      <Job>
-        <JobTitle>Freelance Frontend Developer</JobTitle>
-        <JobMeta>Dec 2025 – Present · Upwork</JobMeta>
-        <List>
-          <ListItem>Developed user interfaces using React and TypeScript.</ListItem>
-          <ListItem>Integrated component-based solutions into Webflow projects.</ListItem>
-          <ListItem>Worked with structured data, CMS and Supabase databases.</ListItem>
-          <ListItem>Built interactive dashboards, visualizations and responsive web interfaces.</ListItem>
-          <ListItem>Ensured quality, consistency and cross-device compatibility of web solutions.</ListItem>
-        </List>
-      </Job>
+              <TimelineMeta>
+                GameDev · Game Design · Unity
+              </TimelineMeta>
 
-      <GrayDivider />
+              <TimelineDescription>
+                Exploring game design and development, learning Unity and
+                working on small personal projects.
+              </TimelineDescription>
 
-      <Job>
-        <JobTitle>Senior Data Analyst</JobTitle>
-        <JobMeta>Oct 2021 – Sep 2022 · Tiburon Research</JobMeta>
-        <List>
-          <ListItem>Led full-cycle research projects from survey design to reporting.</ListItem>
-          <ListItem>Processed, analyzed and visualized data using SPSS, Python and DataTile.</ListItem>
-          <ListItem>Developed interactive dashboards and analytical reports.</ListItem>
-          <ListItem>Trained and mentored team members.</ListItem>
-          <ListItem>Ensured data quality and consistency throughout project lifecycles.</ListItem>
-        </List>
-      </Job>
+              <TimelineTags>
+                <TimelineTag>Unity</TimelineTag>
+                <TimelineTag>Game Design</TimelineTag>
+                <TimelineTag>Game Economy</TimelineTag>
+              </TimelineTags>
+            </TimelineContent>
+          </TimelineItem>
 
-      <Job>
-        <JobTitle>Data Analyst / Junior Data Analyst</JobTitle>
-        <JobMeta>Aug 2018 – Oct 2021 · Tiburon Research</JobMeta>
-        <List>
-          <ListItem>Programmed online surveys using XML, HTML/CSS and C#.</ListItem>
-          <ListItem>Collected, validated and processed research data.</ListItem>
-          <ListItem>Maintained survey logic and data quality controls.</ListItem>
-          <ListItem>Supported analysis and reporting activities.</ListItem>
-        </List>
-      </Job>
+          <TimelineItem>
+            <TimelineYear>2025</TimelineYear>
 
-      <GrayDivider />
+            <TimelineContent>
+              <TimelineTitle>Development</TimelineTitle>
 
-      <Job>
-        <JobTitle>Assistant Instructor</JobTitle>
-        <JobMeta>Sep 2016 – Aug 2018 · STEM Education Center</JobMeta>
-        <List>
-          <ListItem>Supported programming classes</ListItem>
-          <ListItem>Helped students troubleshoot and build projects</ListItem>
-        </List>
-      </Job>
+              <TimelineMeta>
+                Upwork · Freelance
+              </TimelineMeta>
+
+              <TimelineDescription>
+                Building web projects and interfaces, working with React,
+                TypeScript, Webflow, Supabase and structured data.
+              </TimelineDescription>
+
+              <TimelineTags>
+                <TimelineTag>React</TimelineTag>
+                <TimelineTag>TypeScript</TimelineTag>
+                <TimelineTag>Webflow</TimelineTag>
+                <TimelineTag>Supabase</TimelineTag>
+              </TimelineTags>
+            </TimelineContent>
+          </TimelineItem>
+
+          <TimelineItem>
+            <TimelineYear>2021</TimelineYear>
+
+            <TimelineContent>
+              <TimelineTitle>Senior Data Analyst</TimelineTitle>
+
+              <TimelineMeta>
+                Tiburon Research · 2021–2022
+              </TimelineMeta>
+
+              <TimelineDescription>
+                Full-cycle research projects, data processing, advanced
+                analysis and interactive dashboards. Trained and mentored a
+                team member.
+              </TimelineDescription>
+
+              <TimelineTags>
+                <TimelineTag>Python</TimelineTag>
+                <TimelineTag>SPSS</TimelineTag>
+                <TimelineTag>DataTile</TimelineTag>
+                <TimelineTag>Analytics</TimelineTag>
+              </TimelineTags>
+            </TimelineContent>
+          </TimelineItem>
+
+          <TimelineItem>
+            <TimelineYear>2018</TimelineYear>
+
+            <TimelineContent>
+              <TimelineTitle>Data Analytics</TimelineTitle>
+
+              <TimelineMeta>
+                Tiburon Research · 2018–2021
+              </TimelineMeta>
+
+              <TimelineDescription>
+                Research data processing and analysis, survey programming,
+                data validation and interactive survey elements.
+              </TimelineDescription>
+
+              <TimelineTags>
+                <TimelineTag>Data Analysis</TimelineTag>
+                <TimelineTag>Python</TimelineTag>
+                <TimelineTag>JavaScript</TimelineTag>
+                <TimelineTag>C#</TimelineTag>
+              </TimelineTags>
+            </TimelineContent>
+          </TimelineItem>
+
+          <TimelineItem>
+            <TimelineYear>2016</TimelineYear>
+
+            <TimelineContent>
+              <TimelineTitle>Programming Instructor</TimelineTitle>
+
+              <TimelineMeta>
+                STEM Education Center · 2016–2018
+              </TimelineMeta>
+
+              <TimelineDescription>
+                Supported programming classes for children and teenagers,
+                helping students troubleshoot code and build projects.
+              </TimelineDescription>
+
+              <TimelineTags>
+                <TimelineTag>Python</TimelineTag>
+                <TimelineTag>JavaScript</TimelineTag>
+                <TimelineTag>Unreal Engine</TimelineTag>
+              </TimelineTags>
+            </TimelineContent>
+          </TimelineItem>
+        </Timeline>
+      </Section>
+
+      <Section>
+        <SectionHeader>
+          <SectionNumber>03</SectionNumber>
+          <HeaderLine />
+          <SectionTitle>Selected Work</SectionTitle>
+        </SectionHeader>
+
+        <WorkGrid>
+          <WorkCard>
+            <WorkType>Game Design / Coming soon</WorkType>
+
+            <WorkTitle>Game Economy Study</WorkTitle>
+
+            <WorkDescription>
+              A personal study of progression, resource sources and sinks,
+              economy balance and player pacing.
+            </WorkDescription>
+
+            <WorkFooter>
+              <WorkTags>
+                <WorkTag>Game Design</WorkTag>
+                <WorkTag>Sheets</WorkTag>
+                <WorkTag>Analytics</WorkTag>
+              </WorkTags>
+
+              <WorkLink href="#">
+                Soon →
+              </WorkLink>
+            </WorkFooter>
+          </WorkCard>
+
+          <WorkCard>
+            <WorkType>Data / Development</WorkType>
+
+            <WorkTitle>Signal Dashboard</WorkTitle>
+
+            <WorkDescription>
+              Interactive dashboard for monitoring and visualizing trading
+              signals using structured data.
+            </WorkDescription>
+
+            <WorkFooter>
+              <WorkTags>
+                <WorkTag>React</WorkTag>
+                <WorkTag>TypeScript</WorkTag>
+                <WorkTag>Supabase</WorkTag>
+              </WorkTags>
+
+              <WorkLink
+                href="https://tkanastasi.github.io/resume/projects/signal-dashboard/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View →
+              </WorkLink>
+            </WorkFooter>
+          </WorkCard>
+
+          <WorkCard>
+            <WorkType>Development</WorkType>
+
+            <WorkTitle>Where is Ararat?</WorkTitle>
+
+            <WorkDescription>
+              Telegram bot that checks whether Mount Ararat is visible using
+              webcam images and computer vision.
+            </WorkDescription>
+
+            <WorkFooter>
+              <WorkTags>
+                <WorkTag>Python</WorkTag>
+                <WorkTag>OpenCV</WorkTag>
+                <WorkTag>ONNX</WorkTag>
+              </WorkTags>
+
+              <WorkLink href="#">
+                View →
+              </WorkLink>
+            </WorkFooter>
+          </WorkCard>
+
+          <WorkCard>
+            <WorkType>Development</WorkType>
+
+            <WorkTitle>More experiments</WorkTitle>
+
+            <WorkDescription>
+              A collection of smaller projects, experiments and things built
+              while exploring different areas of development.
+            </WorkDescription>
+
+            <WorkFooter>
+              <WorkTags>
+                <WorkTag>C#</WorkTag>
+                <WorkTag>Python</WorkTag>
+                <WorkTag>JavaScript</WorkTag>
+              </WorkTags>
+            </WorkFooter>
+          </WorkCard>
+        </WorkGrid>
+      </Section>
     </ContentWrapper>
   );
 };

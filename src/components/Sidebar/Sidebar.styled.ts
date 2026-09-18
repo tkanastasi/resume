@@ -1,109 +1,103 @@
 import styled from "styled-components";
 
-export const SidebarWrapper = styled.div`
-  background: #2E2E38;
-  padding: 25px;
-  position: relative;
+export const SidebarWrapper = styled.aside`
+  padding: 64px 32px 80px;
+  border-right: 1px solid #383838;
+  background: #171717;
+
+  @media (max-width: 900px) {
+    padding: 48px 28px 60px;
+  }
+
+  @media (max-width: 600px) {
+    border-right: none;
+    border-bottom: 1px solid #383838;
+    padding: 40px 20px;
+  }
 `;
 
-export const Name = styled.div`
-  color: #F1EFF8;
-  font-size: 28px;
+export const ProfilePhoto = styled.img`
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 4px;
+  margin-bottom: 30px;
+`;
+
+export const Name = styled.h1`
+  margin: 0 0 8px;
+
+  color: #f1f1f1;
+  font-size: 30px;
+  line-height: 1.1;
   font-weight: 600;
-  margin-bottom: 5px;
-`;
-
-export const Role = styled.div`
-  font-size: 13px;
-  color: #888;
+  letter-spacing: -1px;
 `;
 
 export const ExRole = styled.div`
-  font-size: 12px;
-  color: #666;
+  display: none;
 `;
 
-export const SectionTitle = styled.div`
-  font-weight: bold;
-  margin: 20px 0 10px;
-  color: #888780;
+export const SectionTitle = styled.h2`
+  margin: 34px 0 14px;
+
+  color: #666;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  line-height: 1.2;
+  text-transform: uppercase;
 `;
 
 export const ContactItem = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  margin-bottom: 12px;
 
-  font-size: 14px;
-  margin-bottom: 8px;
-
-  color: #D3D1C7;
+  color: #a0a0a0;
+  font-size: 12px;
+  line-height: 1.5;
 
   a {
     color: inherit;
     text-decoration: none;
+    transition: color 0.2s ease;
   }
 
   a:hover {
-    color: #EEEDFE;
+    color: #f1f1f1;
   }
-
-  &::before {
-    content: "";
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: #7F77DD;
-    flex-shrink: 0;
-  }
-`;
-
-export const SkillTag = styled.div`
-  display: inline-block;
-  background: #534AB7;
-  color: #EEEDFE;
-  padding: 6px 12px;
-  border-radius: 20px;
-  font-size: 13px;
-  margin-bottom: 8px;
-`;
-
-export const LangTag = styled(SkillTag)``;
-
-export const ProfilePhoto = styled.img`
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  margin-bottom: 20px;
-  border-radius: 8px;
 `;
 
 export const InfoCard = styled.div`
-  background: #3A3A46;
+  padding: 15px;
 
-  border-radius: 11px;
-
-  padding: 16px;
-  margin-bottom: 12px;
-
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  background: #1c1c1c;
+  border: 1px solid #333;
+  border-radius: 5px;
 
   .title {
-    color: #F1EFF8;
-    font-size: 16px;
+    margin-bottom: 9px;
+
+    color: #ddd;
+    font-size: 13px;
     font-weight: 500;
-    line-height: 1.3;
-
-    margin-bottom: 10px;
-  }
-
-  .sub {
-    color: #888780;
-    font-size: 14px;
     line-height: 1.4;
   }
 
-  .sub:last-child {
-    font-size: 13px;
+  .sub {
+    color: #777;
+    font-size: 11px;
+    line-height: 1.6;
+  }
+`;
+
+export const Interests = styled.div`
+  color: #aaa;
+  font-size: 12px;
+  line-height: 1.6;
+
+  p {
+    margin: 16px 0 0;
+    color: #888;
   }
 `;
