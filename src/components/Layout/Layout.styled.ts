@@ -6,4 +6,9 @@ export const Container = styled.main`
   display: grid;
   grid-template-columns: 320px 1fr;
   min-height: 100vh;
+
+  @media (max-width: 600px) {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
 `;

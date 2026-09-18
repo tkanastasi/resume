@@ -1,103 +1,110 @@
+import { useState } from "react";
+
 import {
   SidebarWrapper,
+  ProfileHeader,
+  ProfilePhoto,
+  ProfileInfo,
   Name,
   ExRole,
   SectionTitle,
-  ProfilePhoto,
-  InfoCard,
   ContactItem,
-  Interests,
-  LanguageTags,
+  DesktopDetails,
+  DesktopContacts,
 } from "./Sidebar.styled";
 
-import { Skill } from "../UI/Skill";
+import { ProfileDetails } from "../ProfileDetails/ProfileDetails";
+
 import profilePhoto from "../../assets/profilePhoto.jpg";
 
 export const Sidebar = () => {
-  const contacts = [
-    {
-      text: "tkacheva.anastasi@gmail.com",
-      href: "mailto:tkacheva.anastasi@gmail.com",
-    },
-    {
-      text: "Yerevan, Armenia",
-    },
-    {
-      text: "tg: @tkanastasi",
-      href: "https://t.me/tkanastasi",
-    },
-  ];
+  const [emailCopied, setEmailCopied] = useState(false);
 
-  const languages = [
-    "English — B1",
-    "Russian — Native",
-  ];
+  const email = "tkacheva.anastasi@gmail.com";
+
+  const handleCopyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText(email);
+
+      setEmailCopied(true);
+
+      setTimeout(() => {
+        setEmailCopied(false);
+      }, 1500);
+    } catch {
+      // Clipboard API may be unavailable in some browsers.
+    }
+  };
+
+  const renderContacts = () => (
+    <>
+      <ContactItem>
+        <button
+          type="button"
+          onClick={handleCopyEmail}
+          className="email-button"
+        >
+          {emailCopied ? "Copied!" : "Email"}
+        </button>
+      </ContactItem>
+  
+      <ContactItem>
+        <a
+          href="https://t.me/tkanastasi"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Telegram
+        </a>
+      </ContactItem>
+  
+      <ContactItem>
+        <a
+          href="https://www.linkedin.com/in/tkanastasi/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+      </ContactItem>
+    </>
+  );
 
   return (
     <SidebarWrapper>
-      <ProfilePhoto src={profilePhoto} />
+      <ProfileHeader>
+        <ProfilePhoto src={profilePhoto} />
 
-      <Name>Anastasi Tk.</Name>
-      <ExRole />
+        <ProfileInfo>
+          <Name>Anastasi Tk.</Name>
 
-      <SectionTitle>Contacts</SectionTitle>
+          <ExRole />
 
-      <div>
-        {contacts.map((item, index) => (
-          <ContactItem key={index}>
-            {item.href ? (
-              <a
-                href={item.href}
-                target={item.href.startsWith("http") ? "_blank" : undefined}
-                rel={
-                  item.href.startsWith("http")
-                    ? "noopener noreferrer"
-                    : undefined
-                }
-              >
-                {item.text}
-              </a>
-            ) : (
-              item.text
-            )}
-          </ContactItem>
-        ))}
-      </div>
+          <div className="location">
+            Yerevan, Armenia
+          </div>
 
-      <SectionTitle>Languages</SectionTitle>
+          <div className="mobile-contacts">
+            <div className="contact-label">
+              Contacts
+            </div>
 
-      <LanguageTags>
-        {languages.map((lang, index) => (
-          <Skill key={index} label={lang} />
-        ))}
-      </LanguageTags>
+            {renderContacts()}
+          </div>
+        </ProfileInfo>
+      </ProfileHeader>
 
-      <SectionTitle>Education</SectionTitle>
-
-      <InfoCard>
-        <div className="title">
-          Electrical & Electronics Engineering
+      <DesktopContacts>
+        <SectionTitle>Contacts</SectionTitle>
+        
+        <div className="contacts">
+          {renderContacts()}
         </div>
+      </DesktopContacts>
 
-        <div className="sub">
-          Moscow Aviation Institute
-        </div>
-
-        <div className="sub">
-          Sep 2013 – Jan 2017
-        </div>
-      </InfoCard>
-
-      <SectionTitle>Interests & Work Style</SectionTitle>
-
-      <Interests>
-        <div>🌿 Hiking, Cycling, Pilates</div>
-
-        <p>
-          I value calm, focused work, clear tasks, and a friendly team
-          environment.
-        </p>
-      </Interests>
+      <DesktopDetails>
+        <ProfileDetails />
+      </DesktopDetails>
     </SidebarWrapper>
   );
 };
