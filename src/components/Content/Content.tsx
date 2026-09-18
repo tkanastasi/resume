@@ -145,10 +145,13 @@ export const Content = () => {
                 <SkillTag $type="development">
                   Supabase
                 </SkillTag>
-                <SkillTag $type="development">Git</SkillTag>
+                <SkillTag $type="development">
+                  Git
+                </SkillTag>
               </SkillTags>
             </SkillGroup>
           </SkillGroups>
+
           <ProfileDetails mobile />
         </Intro>
       </Section>
@@ -331,43 +334,18 @@ export const Content = () => {
         </Timeline>
       </Section>
 
-      {/* Selected Work */}
+      {/* Selected Work & References */}
 
       <Section data-reveal>
         <SectionHeader>
           <SectionNumber>03</SectionNumber>
           <HeaderLine />
-          <SectionTitle>Selected Work</SectionTitle>
+          <SectionTitle>
+            Selected Work &amp; References
+          </SectionTitle>
         </SectionHeader>
 
         <WorkGrid>
-          <WorkCard>
-            <WorkType>
-              Game Design / Coming soon
-            </WorkType>
-
-            <WorkTitle>
-              Game Economy Study
-            </WorkTitle>
-
-            <WorkDescription>
-              A personal study of progression, resource sources and
-              sinks, economy balance and player pacing.
-            </WorkDescription>
-
-            <WorkFooter>
-              <WorkTags>
-                <WorkTag>Game Design</WorkTag>
-                <WorkTag>Sheets</WorkTag>
-                <WorkTag>Analytics</WorkTag>
-              </WorkTags>
-
-              <WorkLink href="#">
-                Soon →
-              </WorkLink>
-            </WorkFooter>
-          </WorkCard>
-
           <WorkCard>
             <WorkType>
               Data / Development
@@ -400,48 +378,32 @@ export const Content = () => {
           </WorkCard>
 
           <WorkCard>
-            <WorkType>Development</WorkType>
+            <WorkType>
+              Professional Reference
+            </WorkType>
 
             <WorkTitle>
-              Where is Ararat?
+              Recommendation Letter
             </WorkTitle>
 
             <WorkDescription>
-              Telegram bot that checks whether Mount Ararat is visible
-              using webcam images and computer vision.
+              Reference letter from my Senior Data Analyst position
+              at Tiburon Research.
             </WorkDescription>
 
             <WorkFooter>
               <WorkTags>
-                <WorkTag>Python</WorkTag>
-                <WorkTag>OpenCV</WorkTag>
-                <WorkTag>ONNX</WorkTag>
+                <WorkTag>Data Analysis</WorkTag>
+                <WorkTag>Tiburon Research</WorkTag>
               </WorkTags>
 
-              <WorkLink href="#">
+              <WorkLink
+                href="https://drive.google.com/file/d/1gv997koJZbqizQlUBJT5DBZiNZR3uLFl/view"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 View →
               </WorkLink>
-            </WorkFooter>
-          </WorkCard>
-
-          <WorkCard>
-            <WorkType>Development</WorkType>
-
-            <WorkTitle>
-              More experiments
-            </WorkTitle>
-
-            <WorkDescription>
-              A collection of smaller projects, experiments and things
-              built while exploring different areas of development.
-            </WorkDescription>
-
-            <WorkFooter>
-              <WorkTags>
-                <WorkTag>C#</WorkTag>
-                <WorkTag>Python</WorkTag>
-                <WorkTag>JavaScript</WorkTag>
-              </WorkTags>
             </WorkFooter>
           </WorkCard>
         </WorkGrid>
