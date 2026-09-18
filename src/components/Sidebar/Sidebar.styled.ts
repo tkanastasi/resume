@@ -51,10 +51,10 @@ export const SectionTitle = styled.h2`
 `;
 
 export const ContactItem = styled.div`
-  margin-bottom: 12px;
+  margin-bottom: 13px;
 
   color: #a0a0a0;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.5;
 
   a {
@@ -86,18 +86,24 @@ export const InfoCard = styled.div`
 
   .sub {
     color: #777;
-    font-size: 11px;
+    font-size: 12px;
     line-height: 1.6;
   }
 `;
 
 export const Interests = styled.div`
   color: #aaa;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.6;
 
   p {
     margin: 16px 0 0;
     color: #888;
   }
+`;
+
+export const LanguageTags = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
 `;

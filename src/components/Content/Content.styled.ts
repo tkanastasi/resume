@@ -13,29 +13,9 @@ export const ContentWrapper = styled.main`
   }
 `;
 
-export const Intro = styled.section`
+export const Intro = styled.div`
   max-width: 760px;
-  margin-bottom: 80px;
-`;
-
-export const Eyebrow = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  margin-bottom: 22px;
-
-  color: #777;
-  font-size: 11px;
-  font-weight: 500;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-
-  &::before {
-    content: "";
-    width: 48px;
-    height: 1px;
-    background: #454545;
-  }
+  padding-top: 18px;
 `;
 
 export const IntroTitle = styled.h2`
@@ -192,7 +172,7 @@ export const TimelineMeta = styled.div`
   margin-bottom: 10px;
 
   color: #666;
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.04em;
 `;
 
@@ -215,10 +195,10 @@ export const TimelineTags = styled.div`
 export const TimelineTag = styled.span`
   color: #737373;
   border: 1px solid #303030;
-  padding: 4px 7px;
+  padding: 5px 8px;
   border-radius: 4px;
 
-  font-size: 10px;
+  font-size: 11px;
 `;
 
 /* Work */
@@ -258,7 +238,7 @@ export const WorkType = styled.div`
   margin-bottom: 18px;
 
   color: #686868;
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 500;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -298,10 +278,10 @@ export const WorkTags = styled.div`
 export const WorkTag = styled.span`
   color: #777;
   border: 1px solid #303030;
-  padding: 4px 7px;
+  padding: 5px 8px;
   border-radius: 4px;
 
-  font-size: 10px;
+  font-size: 11px;
 `;
 
 export const WorkLink = styled.a`

@@ -7,6 +7,7 @@ import {
   InfoCard,
   ContactItem,
   Interests,
+  LanguageTags,
 } from "./Sidebar.styled";
 
 import { Skill } from "../UI/Skill";
@@ -65,11 +66,11 @@ export const Sidebar = () => {
 
       <SectionTitle>Languages</SectionTitle>
 
-      {languages.map((lang, index) => (
-        <div key={index}>
-          <Skill label={lang} />
-        </div>
-      ))}
+      <LanguageTags>
+        {languages.map((lang, index) => (
+          <Skill key={index} label={lang} />
+        ))}
+      </LanguageTags>
 
       <SectionTitle>Education</SectionTitle>
 

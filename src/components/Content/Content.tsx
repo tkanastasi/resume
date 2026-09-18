@@ -1,7 +1,6 @@
 import {
   ContentWrapper,
   Intro,
-  Eyebrow,
   IntroTitle,
   IntroText,
   Tags,
@@ -34,28 +33,34 @@ import {
 export const Content = () => {
   return (
     <ContentWrapper>
-      <Intro>
-        <Eyebrow>01 / About</Eyebrow>
+      <Section>
+        <SectionHeader>
+          <SectionNumber>01</SectionNumber>
+          <HeaderLine />
+          <SectionTitle>About Me</SectionTitle>
+        </SectionHeader>
 
-        <IntroTitle>
-          Game Design · Data · Development
-        </IntroTitle>
+        <Intro>
+          <IntroTitle>
+            Game Design · Data · Development
+          </IntroTitle>
 
-        <IntroText>
-          I work with data, code and interactive systems. My background
-          combines 4+ years in data analytics, programming and development.
-          Currently exploring Game Design, with a particular interest in
-          systems, balance and game economy.
-        </IntroText>
+          <IntroText>
+            I work with data, code and interactive systems. My background
+            combines 4+ years in data analytics, programming and development.
+            Currently exploring Game Design, with a particular interest in
+            systems, balance and game economy.
+          </IntroText>
 
-        <Tags>
-          <Tag>Game Design</Tag>
-          <Tag>Data Analysis</Tag>
-          <Tag>Development</Tag>
-          <Tag>GameDev</Tag>
-          <Tag>Unity</Tag>
-        </Tags>
-      </Intro>
+          <Tags>
+            <Tag>Game Design</Tag>
+            <Tag>Data Analysis</Tag>
+            <Tag>Development</Tag>
+            <Tag>GameDev</Tag>
+            <Tag>Unity</Tag>
+          </Tags>
+        </Intro>
+      </Section>
 
       <Section>
         <SectionHeader>
